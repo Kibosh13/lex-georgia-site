@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kibosh13.github.io/lex-georgia-site/sitemap.xml

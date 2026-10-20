@@ -26,14 +26,14 @@ function field(string $key, int $max = 1000): string
 
 $form    = field('form', 50) === 'callback' ? 'Обратный звонок' : 'Заявка на консультацию';
 $name    = field('name', 120);
-$contact = field('contact', 160);
-$method  = field('method', 40);
+$phone   = field('phone', 80);
+$email   = field('email', 160);
 $topic   = field('topic', 120);
-$message = field('message', 3000);
+$comment = field('comment', 3000) ?: field('message', 3000);
 $page    = field('page', 200);
 $consent = !empty($_POST['consent']);
 
-if ($name === '' || $contact === '' || !$consent) {
+if ($name === '' || $phone === '' || $email === '' || !$consent) {
     http_response_code(422);
     echo json_encode(['ok' => false, 'error' => 'validation']);
     exit;
@@ -42,11 +42,11 @@ if ($name === '' || $contact === '' || !$consent) {
 $lines = [
     "Новое обращение: {$form}",
     "Имя: {$name}",
-    "Контакт: {$contact}",
+    "Телефон: {$phone}",
+    "Почта: {$email}",
 ];
-if ($method !== '')  $lines[] = "Удобный способ связи: {$method}";
 if ($topic !== '')   $lines[] = "Тема: {$topic}";
-if ($message !== '') $lines[] = "Сообщение: {$message}";
+if ($comment !== '') $lines[] = "Комментарий: {$comment}";
 $lines[] = "Страница: {$page}";
 $lines[] = 'Время: ' . date('d.m.Y H:i');
 $text = implode("\n", $lines);
