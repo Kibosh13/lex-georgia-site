@@ -21,24 +21,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LegalService","name":"ITP Consulting","description":"Помощь в снятии с розыска Интерпола","url":"https://kibosh13.github.io/lex-georgia-site/","areaServed":"Worldwide","address":{"@type":"PostalAddress","streetAddress":"улица Андрея Размадзе, 68","addressLocality":"Тбилиси","addressCountry":"GE"},"openingHours":"10:00-20:00"}
+  {"@context":"https://schema.org","@type":"LegalService","name":"ITP Consulting","description":"Международная защита и обжалование розыска Интерпола","url":"https://kibosh13.github.io/lex-georgia-site/","telephone":"+995597015541","areaServed":"Worldwide","address":{"@type":"PostalAddress","streetAddress":"улица Андрея Размадзе, 68","addressLocality":"Тбилиси","addressCountry":"GE"},"openingHours":"10:00-20:00"}
   </script>
   <!-- Яндекс.Метрика и Вебмастер: вставьте ID в js/main.js (YM_ID) и мета-тег верификации. [заполнить] -->
 </head>
 <body>
-
-<div class="topbar">
-  <div class="container">
-    <span class="lock-note">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Обращения конфиденциальны. Офис в Тбилиси
-    </span>
-    <div class="topbar-links">
-      <span>10:00–20:00</span>
-      <span>ул. Андрея Размадзе, 68</span>
-    </div>
-  </div>
-</div>
 
 <header class="site-header">
   <div class="container">
@@ -48,16 +35,32 @@
     </a>
     <nav class="nav">
       <a href="interpol.html">Интерпол</a>
-      <a href="ubezhishche.html">Убежище</a>
-      <a href="soprovozhdenie.html">Сопровождение</a>
-      <a href="o-kompanii.html">О компании</a>
+      <div class="nav-item">
+        <a href="ubezhishche.html">Убежище</a>
+        <div class="nav-sub">
+          <a href="ubezhishche-gruziya.html">Грузия</a>
+          <a href="ubezhishche-eu.html">Страны Евросоюза</a>
+          <a href="ubezhishche-latam.html">Страны Латинской Америки</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="soprovozhdenie.html">Сопровождение</a>
+        <div class="nav-sub">
+          <a href="soprovozhdenie-uslugi.html">Юридические услуги</a>
+          <a href="soprovozhdenie-vnzh.html">Получение ВНЖ</a>
+          <a href="soprovozhdenie-pereezd.html">Полное сопровождение переезда</a>
+        </div>
+      </div>
       <a href="blog.html">Блог</a>
+      <a href="o-kompanii.html">О компании</a>
       <a href="kontakty.html">Контакты</a>
-      <a href="en/index.html" class="lang-switch nav-mobile-lang" hreflang="en" lang="en">EN</a>
       <a href="#" class="btn btn-gold nav-mobile-cta" data-callback="Обратный звонок">Оставить заявку</a>
+      <a href="en/index.html" class="lang-switch nav-mobile-lang" hreflang="en" lang="en">EN</a>
     </nav>
-    <a href="en/index.html" class="lang-switch header-lang" hreflang="en" lang="en">EN</a>
-    <a href="#" class="btn btn-gold header-cta" data-callback="Обратный звонок">Оставить заявку</a>
+    <div class="header-actions">
+      <a href="#" class="btn btn-gold header-cta" data-callback="Обратный звонок">Оставить заявку</a>
+      <a href="en/index.html" class="lang-switch header-lang" hreflang="en" lang="en">EN</a>
+    </div>
     <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -67,16 +70,17 @@
   <section class="hero">
     <div class="container hero-grid">
         <div class="eyebrow">ITP Consulting · Тбилиси</div>
-        <h1>Удаление из базы <em>Интерпола</em></h1>
-        <p class="lead">Готовим обращения в Комиссию по контролю за файлами Интерпола и сопровождаем обжалование розыска. Работаем из Грузии с клиентами из любой страны. Первая консультация бесплатная.</p>
+        <h1>Удаление из базы <em>Интерпола</em><span class="hero-sub">Международная защита</span></h1>
+        <p class="lead">Оказываем профессиональную помощь в защите от экстрадиции, подготовке запросов на убежище, обжаловании международного розыска по каналам Интерпола посредством обращения в Комиссию по Контролю за файлами Интерпола.</p>
         <div class="hero-actions">
           <a href="#consult" class="btn btn-gold">Оставить заявку</a>
-          <a href="#" class="btn btn-outline" data-callback="Обратный звонок">Заказать звонок</a>
+          <a href="tel:+995597015541" class="btn btn-outline">+995 597 015 541</a>
         </div>
         <ul class="hero-points">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Клиенты из любой страны</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Обращения конфиденциальны</li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Первая консультация бесплатно</li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>Офис в Грузии</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Клиенты из любой страны</li>
         </ul>
     </div>
   </section>
@@ -86,13 +90,11 @@
       <div class="section-head reveal">
         <div class="eyebrow">Направления работы</div>
         <h2>С чем мы помогаем</h2>
-        <p class="lead">Основная практика и источник работы — снятие с розыска Интерпола. Рядом — убежище и сопровождение переезда в Грузию.</p>
       </div>
       <div class="grid-3">
         <article class="card card-media card-featured reveal">
           <div class="card-img"><img src="img/service-interpol.jpg" alt="Глобус и связка документов на рабочем столе" loading="lazy"></div>
           <div class="card-content">
-            <span class="tag">Основная практика</span>
             <h3>Розыск Интерпола</h3>
             <p>Проверка наличия уведомлений, подготовка обращения в CCF, оспаривание «красных уведомлений» и диффузий, защита при запросах об экстрадиции.</p>
             <a href="interpol.html" class="card-link">Подробнее →</a>
@@ -114,6 +116,30 @@
             <a href="soprovozhdenie.html" class="card-link">Подробнее →</a>
           </div>
         </article>
+        <article class="card card-media reveal">
+          <div class="card-img"><img src="img/asylum-georgia.jpg" alt="Вечерний Тбилиси" loading="lazy"></div>
+          <div class="card-content">
+            <h3>Убежище в Грузии</h3>
+            <p>Подготовка запроса на международную защиту в Грузии: оценка оснований, заявление и сопровождение.</p>
+            <a href="ubezhishche-gruziya.html" class="card-link">Подробнее →</a>
+          </div>
+        </article>
+        <article class="card card-media reveal">
+          <div class="card-img"><img src="img/asylum-eu.jpg" alt="Европейский город в вечернем свете" loading="lazy"></div>
+          <div class="card-content">
+            <h3>Убежище в странах Евросоюза</h3>
+            <p>Сопровождение запроса на убежище в странах Евросоюза: документы, позиция и обжалование.</p>
+            <a href="ubezhishche-eu.html" class="card-link">Подробнее →</a>
+          </div>
+        </article>
+        <article class="card card-media reveal">
+          <div class="card-img"><img src="img/asylum-latam.jpg" alt="Историческая площадь в латинской Америке" loading="lazy"></div>
+          <div class="card-content">
+            <h3>Убежище в странах Латинской Америки</h3>
+            <p>Сопровождение запроса на убежище в странах Латинской Америки.</p>
+            <a href="ubezhishche-latam.html" class="card-link">Подробнее →</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -125,19 +151,16 @@
       </div>
       <div class="reveal">
         <div class="eyebrow">Почему к нам обращаются</div>
-        <h2>Опыт в этой сфере и качество ведения дела</h2>
-        <p class="lead">Клиентам важнее всего качество ведения дела. Решение по розыску принимает Комиссия Интерпола — мы не обещаем исход, а берём на себя подготовку и сопровождение.</p>
-        <div class="feature-row">
-          <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <div><h4>Высокий процент положительных решений</h4><p>При обжаловании розыска Интерпола. Точную статистику на сайте не публикуем.</p></div>
-        </div>
-        <div class="feature-row">
-          <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div>
-          <div><h4>Ведут адвокаты с опытом именно в этой сфере</h4><p>Международный розыск — узкая практика. Дело ведут юристы, которые работают с ней постоянно.</p></div>
-        </div>
+        <h2>Большой опыт и качество ведения дела</h2>
         <div class="feature-row">
           <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div><h4>Первая консультация бесплатная</h4><p>Опишите ситуацию в заявке. Мы оценим, чем можем помочь, и только затем предложим договор.</p></div>
+          <div><h4>Первая консультация бесплатная</h4><p>Оцениваем ситуацию и разрабатываем индивидуальную стратегию.</p></div>
+        </div>
+        <div class="feature-note">
+          <div class="feature-row" style="margin:0">
+            <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+            <div><h4>Полная конфиденциальность</h4><p>Ваша безопасность — наш приоритет. Гарантируем защиту данных и абсолютную конфиденциальность на этапах работы.</p></div>
+          </div>
         </div>
       </div>
     </div>
@@ -196,43 +219,37 @@
     <div class="container">
       <div class="section-head center reveal">
         <div class="eyebrow">Вопросы и ответы</div>
-        <h2>Частые вопросы</h2>
+        <h2>Часто задаваемые вопросы</h2>
       </div>
       <div class="faq reveal">
         <details>
           <summary>Как узнать, нахожусь ли я в розыске Интерпола?</summary>
-          <p>Человек вправе направить запрос в Комиссию по контролю за файлами Интерпола (CCF) о наличии данных о себе. Мы помогаем правильно составить такой запрос.</p>
+          <p>Мы составим официальный запрос в Комиссию по контролю за файлами Интерпола, чтобы подтвердить или опровергнуть наличие уведомлений.</p>
         </details>
         <details>
           <summary>Гарантируете ли вы удаление из базы?</summary>
-          <p>Нет. Решение принимает Комиссия Интерпола. Мы не обещаем исход — готовим позицию и ведём дело.</p>
+          <p>Решение государственных и международных органов находится вне нашего контроля. Наша ответственность — профессиональный подход, прозрачность на каждом этапе и продуманная правовая стратегия, учитывающая обстоятельства именно вашего дела.</p>
         </details>
         <details>
-          <summary>Нужно ли приезжать в офис?</summary>
-          <p>Нет. Консультация и большая часть работы проходят онлайн. Офис: Тбилиси, улица Андрея Размадзе, 68. Встреча — по договорённости, 10:00–20:00.</p>
+          <summary>Как долго Интерпол рассматривает заявку об исключении из базы розыска?</summary>
+          <p>До 9 месяцев.</p>
         </details>
         <details>
-          <summary>Сколько стоят услуги?</summary>
-          <p>Цены на сайте не публикуем. Стоимость называем после бесплатной консультации и фиксируем в договоре.</p>
+          <summary>Что даёт исключение из базы розыска Интерпола?</summary>
+          <p>Возможность жить свободно, планировать будущее и пересекать границы без правовых рисков, связанных с розыском по каналам Интерпола.</p>
+        </details>
+        <details>
+          <summary>Можно ли обратиться, если я нахожусь за границей?</summary>
+          <p>Да. Ваше местонахождение не является препятствием для обращения за юридической помощью. Мы сопровождаем дела дистанционно, обеспечивая удобное взаимодействие, оперативный обмен документами и конфиденциальность на каждом этапе работы.</p>
         </details>
       </div>
     </div>
   </section>
 
   <section class="section cta-band" id="consult">
-    <div class="container split">
-      <div class="reveal">
-        <div class="eyebrow">Консультация</div>
-        <h2>Оставьте заявку — первая консультация бесплатная</h2>
-        <p class="lead">Напишите в форму — или позвоните и напишите в мессенджер, когда появятся рабочие контакты.</p>
-        <ul class="contact-list">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 3L2 11l7 3 3 7z"/></svg>Telegram: [заполнить]</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>Почта: [заполнить]</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7A2 2 0 0 1 22 16.9z"/></svg>Телефон: [заполнить]</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Тбилиси, улица Андрея Размадзе, 68</li>
-        </ul>
-      </div>
-      <form class="form-wrap reveal" data-lead novalidate>
+    <div class="container form-screen">
+      <h2>Первая консультация - бесплатно</h2>
+      <form class="form-wrap form-wide reveal" data-lead novalidate>
         <h3>Оставить заявку</h3>
         <p>Ответим в течение рабочего дня.</p>
         <input type="hidden" name="form" value="lead">
@@ -259,7 +276,7 @@
           <span class="logo-mark">ITP</span>
           <span class="logo-text"><strong>ITP Consulting</strong><span>Interpol desk</span></span>
         </a>
-        <p style="margin-top:20px">Помощь в снятии с розыска Интерпола. Офис в Тбилиси, работаем с клиентами из любой страны.</p>
+        <p style="margin-top:20px">Международная защита.</p>
       </div>
       <div>
         <h4>Услуги</h4>
@@ -272,8 +289,8 @@
       <div>
         <h4>Компания</h4>
         <ul>
-          <li><a href="o-kompanii.html">О компании</a></li>
           <li><a href="blog.html">Блог</a></li>
+          <li><a href="o-kompanii.html">О компании</a></li>
           <li><a href="kontakty.html">Контакты</a></li>
           <li><a href="privacy.html">Политика конфиденциальности</a></li>
         </ul>
@@ -283,14 +300,17 @@
         <ul>
           <li>Тбилиси, ул. Андрея Размадзе, 68</li>
           <li>10:00–20:00</li>
-          <li>Телефон: [заполнить]</li>
+          <li><a href="tel:+995597015541">+995 597 015 541</a></li>
           <li>Почта: [заполнить]</li>
         </ul>
+        <div class="footer-icons">
+          <a href="tel:+995597015541" aria-label="Позвонить"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7A2 2 0 0 1 22 16.9z"/></svg></a>
+          <a href="#consult" aria-label="Написать"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span id="year"></span> ITP Consulting</span>
-      <span class="disclaimer">Информация на сайте не является публичной офертой и не гарантирует результат. Решения по делам принимают уполномоченные органы.</span>
     </div>
   </div>
 </footer>
