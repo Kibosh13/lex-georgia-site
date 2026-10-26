@@ -264,9 +264,9 @@ p { margin: 0 0 1em; }
 .feature-note h4 { margin-bottom: 6px; }
 .feature-note p { margin: 0; }
 
-.form-screen { max-width: none; }
+.form-screen { max-width: 720px; margin-left: auto; margin-right: auto; }
 .form-screen > h2 { color: #fff; text-align: center; margin: 0 0 28px; }
-.form-wide { width: 100%; max-width: none; }
+.form-wide { width: 100%; max-width: 720px; margin-left: auto; margin-right: auto; }
 
 .footer-icons { display: flex; gap: 10px; margin-top: 18px; }
 .footer-icons a {
