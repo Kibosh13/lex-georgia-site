@@ -911,7 +911,9 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 920px) {
   .burger { display: block; }
-  .header-actions { display: none; }
+  .header-actions .header-cta { display: none; }
+  .header-actions { gap: 8px; }
+  .header-lang { height: 40px; min-width: 46px; }
 
   .nav {
     position: fixed;
