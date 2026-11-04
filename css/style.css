@@ -914,6 +914,8 @@ p { margin: 0 0 1em; }
   .header-actions .header-cta { display: none; }
   .header-actions { gap: 8px; }
   .header-lang { height: 40px; min-width: 46px; }
+  .burger { flex-shrink: 0; }
+  .nav .nav-mobile-lang { display: none; }
 
   .nav {
     position: fixed;
@@ -940,7 +942,7 @@ p { margin: 0 0 1em; }
     min-width: 0;
     border: 0;
     box-shadow: none;
-    padding: 0 0 8px 16px;
+    padding: 10px 0 10px 16px;
     background: transparent;
   }
   .nav-sub a { font-size: 1rem; font-weight: 500; padding: 10px 0; }
@@ -993,6 +995,13 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
+  .site-header .container { gap: 10px; }
+  .header-actions { margin-left: auto; }
+  .burger { margin-right: -4px; }
+  .logo { gap: 10px; }
+  .logo-mark { min-width: 52px; height: 48px; font-size: 1rem; }
+  .logo-text strong { font-size: 1.3rem; }
+  .logo-text span { font-size: .66rem; letter-spacing: .12em; }
   .topbar .lock-note { display: none; }
   .topbar .container { justify-content: center; }
   .grid-4, .steps { grid-template-columns: 1fr; }
